@@ -1,0 +1,16 @@
+name: SellChest
+version: '1.0.0'
+main: tw.moses.sellchest.SellChest
+api-version: '26.2'
+softdepend: [Vault, SellPlugin]
+
+commands:
+  sellchest:
+    description: 管理自動販賣牌
+    usage: /sellchest give <玩家>
+    permission: sellchest.admin
+
+permissions:
+  sellchest.admin:
+    description: 發放自動販賣牌
+    default: op
